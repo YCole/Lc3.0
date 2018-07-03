@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:paddingTop="@dimen/app_search_view_padding_top"
+    android:orientation="vertical">
+
+   <include
+        android:id="@+id/app_icon"
+        layout="@layout/app_icon"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp" />
+
+    <CheckBox
+        android:id="@+id/app_checkbox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:button="@drawable/folder_all_apps_grid_checkbox"
+        android:layout_alignParentTop="true"
+        android:layout_alignEnd="@+id/app_icon"
+        android:layout_marginEnd="3dp"/>
+</RelativeLayout>

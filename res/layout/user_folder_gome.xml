@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+     Copyright (C) 2015 The Android Open Source Project
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+<com.gome.launcher.Folder xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:launcher="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:elevation="10dp"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:id="@+id/folder_header"
+        android:layout_width="@dimen/folder_edit_content_width"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="9dp"
+        android:background="@drawable/bg_folder_title_edit_gome"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <com.gome.launcher.ExtendedEditText
+            android:id="@+id/folder_name"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/folder_edit_content_height"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:background="#00000000"
+            android:gravity="center"
+            android:imeOptions="flagNoExtractUi"
+            android:paddingLeft="43dp"
+            android:singleLine="true"
+            android:textColor="#ffffffff"
+            android:textColorHint="#ff6a6c71"
+            android:textCursorDrawable="@drawable/edit_cursor_color"
+            android:textColorHighlight="@color/folder_name_high_light_color"
+            android:textSize="@dimen/folder_name_text_size" />
+
+        <ImageView
+            android:id="@+id/edit_clear"
+            android:layout_width="@dimen/folder_edit_clear_edge_length"
+            android:layout_height="@dimen/folder_edit_clear_edge_length"
+            android:layout_gravity="center_vertical"
+            android:layout_marginEnd="@dimen/folder_edit_clear_margin_right"
+            android:layout_marginRight="@dimen/folder_edit_clear_margin_right"
+            android:scaleType="fitXY"
+            android:src="@drawable/ic_gome_icon_cancel" />
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/folder_content_wrapper"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <!-- Actual size of the indicator doesn't matter as it is scaled to match the view size -->
+        <com.gome.launcher.FocusIndicatorView
+            android:id="@+id/focus_indicator"
+            android:layout_width="20dp"
+            android:layout_height="20dp" />
+
+        <com.gome.launcher.FolderPagedView
+            android:id="@+id/folder_content"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/bg_folder_title_edit_gome"
+            android:paddingBottom="@dimen/folder_paged_view_padding_bottom"
+            android:paddingTop="@dimen/folder_paged_view_padding_top"
+            launcher:pageIndicator="@id/folder_page_indicator" />
+
+        <com.gome.launcher.PageIndicator
+            android:id="@+id/folder_page_indicator"
+            android:layout_width="wrap_content"
+            android:layout_height="12dp"
+            android:layout_gravity="bottom|center_horizontal"
+            android:layout_marginBottom="12dp"
+            android:animateLayoutChanges="true"
+            launcher:singleShow="false"
+            launcher:windowSize="@integer/config_maxNumberOfPageIndicatorsToShow" />
+    </FrameLayout>
+
+</com.gome.launcher.Folder>

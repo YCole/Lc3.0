@@ -1,0 +1,277 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright (C) 2009 The Android Open Source Project
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+
+<favorites xmlns:launcher="http://schemas.android.com/apk/res-auto/com.gome.launcher">
+
+    <!-- Hotseat -->
+    <include launcher:workspace="@xml/dw_phone_hotseat" />
+
+    <!-- ******************** Page 0 start ******************** -->
+
+    <!-- 天气widget -->
+    <appwidget
+        launcher:screen="0"
+        launcher:x="0"
+        launcher:y="0"
+        launcher:spanX="4"
+        launcher:spanY="2"
+        launcher:packageName="com.gome.weather2"
+        launcher:className="com.gome.weather2.widget.WeatherClockWidget" />
+
+    <!-- Bottom row -->
+
+    <!-- 相机 -->
+    <resolve
+        launcher:screen="0"
+        launcher:x="0"
+        launcher:y="-1" >
+        <favorite
+            launcher:packageName="com.mediatek.camera"
+            launcher:className="com.mediatek.camera.CameraLauncher"/>
+    </resolve>
+    <!-- 图库 -->
+    <resolve
+        launcher:screen="0"
+        launcher:x="1"
+        launcher:y="-1" >
+        <favorite
+            launcher:packageName="com.android.gallery3d"
+            launcher:className="com.android.newgallery.NewGallery"/>
+    </resolve>
+    <!-- 钥匙串 -->
+    <resolve
+        launcher:screen="0"
+        launcher:x="2"
+        launcher:y="-1" >
+        <favorite
+            launcher:packageName="com.gome.keychain"
+            launcher:className="com.gome.keychain.activity.EntranceActivity"/>
+    </resolve>
+    <!-- 应用商城 -->
+    <resolve
+        launcher:screen="0"
+        launcher:x="3"
+        launcher:y="-1" >
+        <favorite
+            launcher:packageName="com.hc.cnappstore"
+            launcher:className="com.hc.gm.appcenter.activity.SplashActivity"/>
+    </resolve>
+    <!-- ******************** Page 0 end ******************** -->
+
+
+    <!-- ******************** Page 1 start ******************** -->
+
+    <!-- 实用工具 -->
+    <folder
+        launcher:screen="1"
+        launcher:x="0"
+        launcher:y="0"
+        launcher:title="@string/folder_name_tools" >
+        <!-- 计算器 -->
+        <favorite
+            launcher:packageName="com.gome.calculator"
+            launcher:className="com.gome.calculator.mainactivity.CalculatorActivity" />
+        <!-- 备份 -->
+        <favorite
+            launcher:packageName="com.mediatek.backuprestore"
+            launcher:className="com.mediatek.backuprestore.activities.BackupRestoreMainActivity"/>
+        <!-- 一键换机 -->
+        <favorite
+            launcher:packageName="com.gome.gomemover"
+            launcher:className="com.gome.gomemover.activity.StartActivity"/>
+        <!-- 录音机 -->
+        <favorite
+            launcher:packageName="com.android.soundrecorder"
+            launcher:className="com.android.soundrecorder.SoundRecorder"/>
+        <!-- 便签 -->
+        <favorite
+            launcher:packageName="com.gome.note"
+            launcher:className="com.gome.note.ui.home.NoteHomeActivity"/>
+        <!-- SIM卡应用 -->
+        <favorite
+            launcher:packageName="com.android.stk"
+            launcher:className="com.android.stk.StkMain"/>
+    </folder>
+
+    <!-- 办公商务 -->
+    <folder
+        launcher:screen="1"
+        launcher:x="1"
+        launcher:y="0"
+        launcher:title="@string/folder_name_office" >
+        <!-- 网易邮箱大师 -->
+        <favorite
+            launcher:packageName="com.netease.mail"
+            launcher:className="com.netease.mobimail.activity.LaunchActivity" />
+        <!-- WPS Office -->
+        <favorite
+            launcher:packageName="cn.wps.moffice_eng"
+            launcher:className="cn.wps.moffice.documentmanager.PreStartActivity"/>
+        <!-- UC浏览器 -->
+        <favorite
+            launcher:packageName="com.UCMobile"
+            launcher:className="com.UCMobile.main.UCMobile"/>
+        <!-- 掌阅iReader -->
+        <favorite
+            launcher:packageName="com.chaozh.iReader"
+            launcher:className="com.chaozh.iReader.ui.activity.WelcomeActivity" />
+    </folder>
+
+    <!-- 影音视频 -->
+    <folder
+        launcher:screen="1"
+        launcher:x="2"
+        launcher:y="0"
+        launcher:title="@string/folder_name_media_video" >
+        <!-- 视频 -->
+        <favorite
+            launcher:packageName="com.hct.videoplayer"
+            launcher:className="com.hct.videoplayer.VideoBrowserActivity"/>
+        <!-- 网易云音乐 -->
+        <favorite
+            launcher:packageName="com.netease.cloudmusic"
+            launcher:className="com.netease.cloudmusic.activity.LoadingActivity"/>
+        <!-- 爱奇艺 -->
+        <favorite
+            launcher:packageName="com.qiyi.video"
+            launcher:className="com.qiyi.video.WelcomeActivity"/>
+        <!-- 喜马拉雅FM -->
+        <favorite
+            launcher:packageName="com.ximalaya.ting.android"
+            launcher:className="com.ximalaya.ting.android.activity.account.WelComeActivity"/>
+        <!-- 腾讯视频 -->
+        <favorite
+            launcher:packageName="com.tencent.qqlive"
+            launcher:className="com.tencent.qqlive.ona.activity.WelcomeActivity"/>
+
+    </folder>
+
+    <!-- 生活应用 -->
+    <folder
+        launcher:screen="1"
+        launcher:x="3"
+        launcher:y="0"
+        launcher:title="@string/folder_name_life" >
+        <!-- 今日头条 -->
+        <favorite
+            launcher:packageName="com.ss.android.article.news"
+            launcher:className="com.ss.android.article.news.activity.SplashBadgeActivity"/>
+        <!-- 国美云智/国美智能 -->
+        <favorite
+            launcher:packageName="com.smart.gome"
+            launcher:className="com.gome.clouds.init.WelcomeActivity"/>
+        <!-- 国美金融 -->
+        <favorite
+            launcher:packageName="com.gomemyc.mylc.android"
+            launcher:className="com.gomefinance.app.ui.splash.StartLoadingActivity"/>
+        <!-- 搜狗搜索 -->
+        <favorite
+            launcher:packageName="com.sogou.activity.src"
+            launcher:className="com.sogou.activity.src.SplashActivity"/>
+        <!-- 大众点评 -->
+        <favorite
+            launcher:packageName="com.dianping.v1"
+            launcher:className="com.dianping.main.permission.PermissionActivity"/>
+        <!-- 高德地图 -->
+        <favorite
+            launcher:packageName="com.autonavi.minimap"
+            launcher:className="com.autonavi.map.activity.SplashActivity"/>
+        <!-- 微博 -->
+        <favorite
+            launcher:packageName="com.sina.weibo"
+            launcher:className="com.sina.weibo.SplashActivity"/>
+        <!-- 搜狐新闻 -->
+        <favorite
+            launcher:packageName="com.sohu.newsclient"
+            launcher:className="com.sohu.newsclient.boot.activity.SplashActivity"/>
+        <!-- 携程-->
+    </folder>
+
+    <!-- 时钟 -->
+    <resolve
+        launcher:screen="1"
+        launcher:x="0"
+        launcher:y="1" >
+        <favorite
+            launcher:packageName="hct.com.cn.alarmclock"
+            launcher:className="hct.com.cn.alarmclock.activity.AlarmClockActivity"/>
+    </resolve>
+    <!-- 日历 -->
+    <resolve
+        launcher:screen="1"
+        launcher:x="1"
+        launcher:y="1" >
+        <favorite
+            launcher:packageName="com.android.calendar"
+            launcher:className="com.android.calendar.AllInOneActivity"/>
+    </resolve>
+    <!-- 文件管理 -->
+    <resolve
+        launcher:screen="1"
+        launcher:x="2"
+        launcher:y="1" >
+        <favorite
+            launcher:packageName="hct.com.cn.filer"
+            launcher:className="hct.com.cn.filer.FileMgrActivity"/>
+    </resolve>
+    <!-- 用户中心 -->
+    <resolve
+        launcher:screen="1"
+        launcher:x="3"
+        launcher:y="1" >
+        <favorite
+            launcher:packageName="com.gome.usercenter"
+            launcher:className="com.gome.usercenter.activity.HomeActivity"/>
+    </resolve>
+    <!-- 天气 -->
+    <resolve
+        launcher:screen="1"
+        launcher:x="0"
+        launcher:y="2" >
+        <favorite
+            launcher:packageName="com.gome.weather2"
+            launcher:className="com.gome.weather2.activity.MainActivity"/>
+    </resolve>
+    <!-- 设置 -->
+    <resolve
+        launcher:screen="1"
+        launcher:x="1"
+        launcher:y="2" >
+        <favorite
+            launcher:packageName="com.android.settings"
+            launcher:className="com.android.settings.Settings"/>
+    </resolve>
+    <!-- 国美 -->
+    <resolve
+        launcher:screen="1"
+        launcher:x="2"
+        launcher:y="2" >
+        <favorite
+            launcher:packageName="com.gome.eshopnew"
+            launcher:className="com.gome.ecmall.home.LaunchActivity"/>
+    </resolve>
+    <!-- 手机管家 -->
+    <resolve
+        launcher:screen="1"
+        launcher:x="3"
+        launcher:y="2" >
+        <favorite
+            launcher:packageName="com.gome.security"
+            launcher:className="com.gome.security.activity.MainActivity"/>
+    </resolve>
+
+    <!-- ******************** Page 1 end ******************** -->
+</favorites>

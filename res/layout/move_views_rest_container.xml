@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.gome.launcher.move.MoveViewsRestContainer 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:launcher="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/move_views_container_height"
+    android:background="@color/screen_hover_color"
+    launcher:layout_ignoreInsets="true">
+
+    <com.gome.launcher.view.PullRecyclerViewGroup
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.gome.launcher.move.MoveViewsRecyclerView
+            android:id="@+id/move_view_list"
+            android:theme="@style/Theme.Dark.CustomOverscroll"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:scrollbars="none"
+            android:overScrollMode="never"/>
+
+    </com.gome.launcher.view.PullRecyclerViewGroup>
+
+    <TextView
+        android:id="@+id/move_more_app_hint"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/move_more_app_hint"
+        android:textColor="@android:color/white"
+        android:textSize="13dp"
+        android:layout_gravity="center"
+        android:visibility="invisible"
+        android:focusable="false"/>
+
+</com.gome.launcher.move.MoveViewsRestContainer>

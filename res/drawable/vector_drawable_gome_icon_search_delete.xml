@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android" android:viewportWidth="96"
+    android:viewportHeight="96" android:width="96dp" android:height="96dp">
+    <group android:name="launch_folder_edit_delete" android:translateY="0" android:translateX="0">
+        <path android:fillColor="#4DFFFFFF" android:strokeWidth="1" android:name="Oval-2"
+             android:strokeColor="#00000000" android:fillAlpha="0.2"
+            android:pathData="M14,48a34,34 0 0,1 68,0a34,34 0 0,1 -68,0z" />
+        <path android:fillColor="#FFFFFF" android:strokeWidth="1" android:name="Path-6"
+             android:strokeColor="#00000000" android:fillAlpha="1.0"
+            android:pathData="M58.069531,34.8982864 L34.8982864,58.069531 C34.1172379,58.8505796 34.1172379,60.1169096 34.8982864,60.8979581 C35.679335,61.6790067 36.945665,61.6790067 37.7267136,60.8979581 L60.8979581,37.7267136 C61.6790067,36.945665 61.6790067,35.679335 60.8979581,34.8982864 C60.1169096,34.1172379 58.8505796,34.1172379 58.069531,34.8982864 Z" />
+        <path android:fillColor="#FFFFFF" android:strokeWidth="1" android:name="Line"
+            android:strokeColor="#00000000" android:fillAlpha="1.0"
+            android:pathData="M34.8813053,37.6198153 L41.0756412,43.903995 C41.8510462,44.6906467 43.1173434,44.6997638 43.903995,43.9243588 C44.6906467,43.1489538 44.6997638,41.8826566 43.9243588,41.096005 L37.7300229,34.8118253 C36.9546178,34.0251737 35.6883207,34.0160565 34.9016691,34.7914615 C34.1150174,35.5668665 34.1059002,36.8331637 34.8813053,37.6198153 Z" />
+        <path android:fillColor="#FFFFFF" android:strokeWidth="1" android:name="Line"
+           android:strokeColor="#00000000" android:fillAlpha="1.0"
+            android:pathData="M47.0995476,49.9278421 L58.4013054,61.012803 C59.1898808,61.7862515 60.4561514,61.7739888 61.2295999,60.9854133 C62.0030484,60.1968379 61.9907856,58.9305673 61.2022102,58.1571188 L49.9004524,47.0721579 C49.111877,46.2987094 47.8456064,46.3109722 47.0721579,47.0995476 C46.2987094,47.888123 46.3109722,49.1543936 47.0995476,49.9278421 Z" />
+    </group>
+</vector>

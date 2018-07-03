@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Add by gaoquan 2017.6.1 -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:gome="http://schemas.android.com/apk/res/com.gome"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/setting_background_color">
+
+    <FrameLayout
+        android:id="@+id/content_settings"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        />
+    <include layout="@layout/action_bar_back_unread"
+        android:id="@+id/content_top_settings" />
+
+    <!--<View-->
+        <!--android:id="@+id/divider_list"-->
+        <!--style="@style/TopDividerStyle"-->
+        <!--android:layout_below="@+id/content_top_settings" />-->
+
+    <LinearLayout
+        android:id="@+id/icon_auto_cover"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:layout_below="@+id/content_top_settings"
+        android:background="@android:color/white"
+        android:paddingTop="14dp"
+        android:paddingBottom="14dp"
+        >
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            >
+
+            <TextView
+                android:id="@+id/cover_title"
+                android:text="@string/icon_auto_cover_title"
+                style="@style/Title_TextView_Style" />
+
+            <TextView
+                style="@style/Title_Summary_TextView_Style"
+                android:paddingTop="2dp"
+                android:text="@string/icon_auto_cover_summary"
+                android:layout_alignLeft="@+id/cover_title"
+                android:layout_below="@+id/cover_title" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:gravity="center"
+            android:paddingStart="14dp"
+            android:paddingEnd="14dp"
+            android:orientation="vertical">
+
+            <gome.widget.GomeSwitch
+                android:id="@+id/cover_switch"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="true"
+                android:layout_alignParentRight="true" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <View
+        android:id="@+id/divider_cover"
+        style="@style/ViewDividerStyle"
+        android:layout_marginStart="20dp"
+        android:layout_below="@+id/icon_auto_cover" />
+
+    <LinearLayout
+        android:id="@+id/shake_arrange_icons"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:layout_below="@+id/divider_cover"
+        android:background="@android:color/white"
+        android:paddingTop="14dp"
+        android:paddingBottom="14dp"
+        >
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            >
+
+            <TextView
+                android:id="@+id/shake_title"
+                android:text="@string/shake_arrange_icons_title"
+                style="@style/Title_TextView_Style" />
+
+            <TextView
+                style="@style/Title_Summary_TextView_Style"
+                android:paddingTop="2dp"
+                android:text="@string/shake_arrange_icons_summary"
+                android:layout_alignLeft="@+id/shake_title"
+                android:layout_below="@+id/shake_title" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:gravity="center"
+            android:paddingStart="14dp"
+            android:paddingEnd="14dp"
+            android:orientation="vertical">
+
+            <gome.widget.GomeSwitch
+                android:id="@+id/shake_switch"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="true"
+                android:layout_alignParentRight="true" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <View
+        android:id="@+id/divider_shake"
+        style="@style/ViewDividerStyle"
+        android:layout_marginStart="20dp"
+        android:layout_below="@+id/shake_arrange_icons" />
+
+    <LinearLayout
+        android:id="@+id/unread"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:layout_below="@+id/divider_shake"
+        android:background="@android:color/white"
+        android:paddingTop="14dp"
+        android:paddingBottom="14dp"
+        >
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            >
+
+            <TextView
+                android:id="@+id/unread_title"
+                android:text="@string/unread_badges"
+                style="@style/Title_TextView_Style" />
+
+            <TextView
+                style="@style/Title_Summary_TextView_Style"
+                android:paddingTop="2dp"
+                android:text="@string/unread_set"
+                android:layout_alignLeft="@+id/unread_title"
+                android:layout_below="@+id/unread_title" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:gravity="center"
+            android:paddingStart="14dp"
+            android:paddingEnd="14dp"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@*android:id/icon"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_gravity="center"
+                android:src="@drawable/gome_icon_arrow"
+                android:scaleType="centerInside" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <View
+        android:id="@+id/unread_divider"
+        style="@style/ViewDividerStyle"
+        android:layout_marginStart="20dp"
+        android:layout_below="@+id/unread" />
+
+
+</RelativeLayout>

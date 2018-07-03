@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/effects_item"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:orientation="vertical">
+    <!-- Add by linhai 2017.7.28 for Effect ui 调整 start-->
+    <RelativeLayout
+        android:layout_width="@dimen/effectItemWidth"
+        android:layout_height="@dimen/effectItemHeight"
+        android:layout_marginLeft="@dimen/effectItemPadding"
+        android:layout_marginRight="@dimen/effectItemPadding"
+        android:foreground="@drawable/wallpaper_frame_fg">
+
+        <ImageView
+            android:id="@+id/icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:scaleType="fitXY"
+            android:layout_centerInParent="true"
+            />
+
+        <CheckBox
+            android:id="@+id/select"
+            style="@style/effects_checkbox_style"
+            android:layout_width="@dimen/effect_select_width"
+            android:layout_height="@dimen/effect_select_height"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="6dp"
+            android:layout_marginTop="6dp"
+            android:checked="true"
+            android:clickable="false"
+            />
+    </RelativeLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/widget_and_effect_cell_text_height"
+        android:gravity="center"
+        android:orientation="horizontal">
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ellipsize="end"
+        android:fadingEdge="horizontal"
+        android:gravity="start"
+        android:shadowColor="#B0000000"
+        android:shadowRadius="2.0"
+        android:paddingStart="2dp"
+        android:maxLines="1"
+        android:textColor="@color/widgets_view_horizontal_item_text_color"
+        android:textSize="10dp" />
+        </LinearLayout>
+    <!-- Add by linhai 2017.7.28 for Effect ui 调整 end-->
+</LinearLayout>

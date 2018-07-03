@@ -1,0 +1,111 @@
+buildscript {
+    repositories {
+        mavenCentral()
+    }
+    dependencies {
+        classpath 'com.android.tools.build:gradle:2.1.2'
+        classpath 'com.google.protobuf:protobuf-gradle-plugin:0.7.0'
+    }
+}
+
+apply plugin: 'com.android.application'
+apply plugin: 'com.google.protobuf'
+
+android {
+    compileSdkVersion 24
+    buildToolsVersion "25.0.2"
+
+    defaultConfig {
+        applicationId "com.gome.launcher"
+        minSdkVersion 24
+        targetSdkVersion 26
+        versionCode 153
+        versionName "1.0.153.180509_beta"
+        multiDexEnabled true
+        testApplicationId "com.gome.launcher.tests"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+    }
+    signingConfigs {
+        release {
+            storeFile file("launcher.jks")
+            storePassword '123456'
+            keyAlias 'launcher'
+            keyPassword '123456'
+        }
+
+        debug {
+            storeFile file("launcher.jks")
+            storePassword '123456'
+            keyAlias 'launcher'
+            keyPassword '123456'
+        }
+    }
+    buildTypes {
+        debug {
+            minifyEnabled false
+        }
+    }
+    sourceSets {
+        main {
+            res.srcDirs = ['res', 'WallpaperPicker/res']
+            java.srcDirs = ['src', 'WallpaperPicker/src']
+            manifest.srcFile 'AndroidManifest.xml'
+            proto.srcDirs 'protos/'
+            assets.srcDirs = ['assets']
+            jniLibs.srcDirs = ['libs']
+        }
+
+        androidTest {
+            java.srcDirs = ['tests/src']
+            res.srcDirs = ['tests/res']
+            manifest.srcFile "tests/AndroidManifest.xml"
+        }
+    }
+    productFlavors {
+    }
+}
+repositories {
+    flatDir {
+        dirs 'libs'
+    }
+}
+repositories {
+    mavenCentral()
+}
+
+gradle.projectsEvaluated {
+    tasks.withType(JavaCompile) {
+        options.compilerArgs.add('-Xbootclasspath/p:libs/framework.jar')
+    }
+}
+
+String SDK_DIR = System.getenv("ANDROID_SDK_HOME")
+if(SDK_DIR == null) {
+    Properties props = new Properties()
+    props.load(new FileInputStream(project.rootProject.file("local.properties")))
+    SDK_DIR = props.get('sdk.dir');
+}
+dependencies {
+    provided files('libs/framework.jar')
+    compile 'com.android.support:support-v4:24.0.0'
+    compile 'com.android.support:recyclerview-v7:24.0.0'
+    compile 'com.nineoldandroids:library:2.4.0'
+    compile 'com.google.protobuf.nano:protobuf-javanano:3.0.0-alpha-2'
+    provided files("${SDK_DIR}/platforms/android-24/data/layoutlib.jar")
+
+    testCompile 'junit:junit:4.12'
+    androidTestCompile 'com.android.support.test:runner:0.5'
+    androidTestCompile 'com.android.support.test.uiautomator:uiautomator-v18:2.1.2'
+    androidTestCompile 'com.android.support:support-annotations:24.0.0'
+    compile 'com.mcxiaoke.volley:library:1.0.19'
+    compile(name: 'gomeres', ext: 'aar')
+   
+    compile files('libs/pinyin4j-2.5.0.jar')
+}
+
+protobuf {
+    // Configure the protoc executable
+    protoc {
+        artifact = 'com.google.protobuf:protoc:3.0.0-alpha-3'
+    }
+}

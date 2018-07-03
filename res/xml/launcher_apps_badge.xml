@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Add by gaoquan  2017.11.23 -->
+<filterapps xmlns:launcher="http://schemas.android.com/apk/res-auto">
+
+    <shortcut
+        launcher:PackageName="com.gome.security"
+        launcher:ClassName="com.gome.security.activity.MainActivity"
+        />
+
+    <shortcut
+        launcher:PackageName="com.android.dialer"
+        launcher:ClassName="com.android.contacts.activities.PeopleActivity"
+        />
+
+    <shortcut
+        launcher:PackageName="com.android.settings"
+        launcher:ClassName="com.android.settings.iris.IrisSettingMainActivity"
+        />
+
+    <shortcut
+        launcher:PackageName="hct.com.cn.alarmclock"
+        launcher:ClassName="hct.com.cn.alarmclock.activity.AlarmClockActivity"
+        />
+
+    <shortcut
+        launcher:PackageName="com.gome.keychain"
+        launcher:ClassName="com.gome.keychain.activity.EntranceActivity"
+        />
+
+    <shortcut
+        launcher:PackageName="com.hct.videoplayer"
+        launcher:ClassName="com.hct.videoplayer.VideoBrowserActivity"
+        />
+
+    <shortcut
+        launcher:PackageName="com.mediatek.backuprestore"
+        launcher:ClassName="com.mediatek.backuprestore.activities.BackupRestoreMainActivity"
+        />
+
+    <shortcut
+        launcher:PackageName="com.techain.sherry.electricmonitor"
+        launcher:ClassName="com.techain.sherry.electricmonitor.MainActivity"
+        />
+
+    <shortcut
+        launcher:PackageName="com.android.cellbroadcastreceiver"
+        launcher:ClassName="com.android.cellbroadcastreceiver.CellBroadcastListActivity"
+        />
+
+    <shortcut
+        launcher:PackageName="com.gome.gmeye"
+        launcher:ClassName="com.gome.gmeye.activity.WelcomeActivity"
+        />
+
+    <shortcut
+        launcher:PackageName="com.gome.gomemover"
+        launcher:ClassName="com.gome.gomemover.activity.StartActivity"
+        />
+</filterapps>

@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<icons xmlns:launcher="http://schemas.android.com/apk/res-auto/com.gome.launcher">
+
+    <icon
+        launcher:appName="电话"
+        launcher:componentName="com.android.dialer/com.android.dialer.DialtactsActivity"
+        launcher:iconPath="gome_icon_launcher_phone.png" />
+
+    <icon
+        launcher:appName="联系人"
+        launcher:componentName="com.android.dialer/com.android.contacts.activities.PeopleActivity"
+        launcher:iconPath="gome_icon_launcher_contacts.png" />
+
+    <icon
+        launcher:appName="信息"
+        launcher:componentName="com.android.mms/com.android.mms.ui.ConversationList"
+        launcher:iconPath="gome_icon_launcher_message.png" />
+
+    <icon
+        launcher:appName="浏览器"
+        launcher:componentName="com.android.browser/com.tencent.mtt.SplashActivity"
+        launcher:iconPath="gome_icon_launcher_browser.png" />
+
+    <icon
+        launcher:appName="虹膜科技"
+        launcher:componentName="com.android.settings/com.android.settings.iris.IrisSettingMainActivity"
+        launcher:iconPath="gome_icon_launcher_iris.png" />
+
+    <icon
+        launcher:appName="相机"
+        launcher:componentName="com.mediatek.camera/com.mediatek.camera.CameraLauncher"
+        launcher:iconPath="gome_icon_launcher_camera.png" />
+
+    <icon
+        launcher:appName="图库"
+        launcher:componentName="com.android.gallery3d/com.android.newgallery.NewGallery"
+        launcher:iconPath="gome_icon_launcher_pictures.png" />
+
+    <icon
+        launcher:appName="手机管家"
+        launcher:componentName="com.gome.security/com.gome.security.activity.MainActivity"
+        launcher:iconPath="gome_icon_launcher_manager.png" />
+
+    <icon
+        launcher:appName="应用商城"
+        launcher:componentName="com.hc.cnappstore/com.hc.gm.appcenter.activity.SplashActivity"
+        launcher:iconPath="gome_icon_launcher_appstore.png" />
+
+    <icon
+        launcher:appName="天气"
+        launcher:componentName="com.gome.weather2/com.gome.weather2.activity.MainActivity"
+        launcher:iconPath="gome_icon_launcher_weather.png" />
+
+    <icon
+        launcher:appName="音乐"
+        launcher:componentName="com.android.music/com.android.music.MusicBrowserActivity"
+        launcher:iconPath="gome_icon_launcher_music.png" />
+
+    <icon
+        launcher:appName="视频"
+        launcher:componentName="com.hct.videoplayer/com.hct.videoplayer.VideoBrowserActivity"
+        launcher:iconPath="gome_icon_launcher_media.png" />
+
+    <icon
+        launcher:appName="文件管理"
+        launcher:componentName="hct.com.cn.filer/hct.com.cn.filer.FileMgrActivity"
+        launcher:iconPath="gome_icon_launcher_file_manager.png" />
+
+    <icon
+        launcher:appName="日历"
+        launcher:componentName="com.android.calendar/com.android.calendar.AllInOneActivity"
+        launcher:iconPath="gome_icon_launcher_calendar.png" />
+
+    <icon
+        launcher:appName="设置"
+        launcher:componentName="com.android.settings/com.android.settings.OneSettingsActivity"
+        launcher:iconPath="gome_icon_launcher_settings.png" />
+
+    <!--<icon-->
+        <!--launcher:appName="国美plus"-->
+        <!--launcher:componentName=""-->
+        <!--launcher:iconPath="" />-->
+
+    <icon
+        launcher:appName="计算器"
+        launcher:componentName="com.gome.calculator/com.gome.calculator.mainactivity.CalculatorActivity"
+        launcher:iconPath="gome_icon_launcher_calculator.png" />
+
+    <icon
+        launcher:appName="时钟"
+        launcher:componentName="hct.com.cn.alarmclock/hct.com.cn.alarmclock.activity.AlarmClockActivity"
+        launcher:iconPath="gome_icon_launcher_clock.png" />
+
+    <icon
+        launcher:appName="录音机"
+        launcher:componentName="com.android.soundrecorder/com.android.soundrecorder.SoundRecorder"
+        launcher:iconPath="gome_icon_launcher_record.png" />
+
+    <icon
+        launcher:appName="SIM卡应用"
+        launcher:componentName="com.android.stk/com.android.stk.StkMain"
+        launcher:iconPath="gome_icon_launcher_simcard.png" />
+
+    <icon
+        launcher:appName="备份与恢复"
+        launcher:componentName="com.mediatek.backuprestore/com.mediatek.backuprestore.BackupRestoreMainActivity"
+        launcher:iconPath="gome_icon_launcher_backups.png" />
+
+    <icon
+        launcher:appName="指南针"
+        launcher:componentName="com.utooo.ssknife.compass.guomei/com.utooo.ssknife.compass.CompassActivity"
+        launcher:iconPath="gome_icon_launcher_compass.png" />
+
+    <icon
+        launcher:appName="电子邮件"
+        launcher:componentName="com.android.email/com.android.email.activity.Welcome"
+        launcher:iconPath="gome_icon_launcher_email.png" />
+
+    <!--<icon-->
+        <!--launcher:appName="WPS Office"-->
+        <!--launcher:componentName=""-->
+        <!--launcher:iconPath="" />-->
+
+    <!--<icon-->
+        <!--launcher:appName="名片全能王"-->
+        <!--launcher:componentName="com.intsig.BizCardReader/com.intsig.camcard.BcrFirstLaunchGuide"-->
+        <!--launcher:iconPath="" />-->
+
+    <icon
+        launcher:appName="FM 电台"
+        launcher:componentName="com.android.fmradio/com.android.fmradio.FmMainActivity"
+        launcher:iconPath="gome_icon_launcher_fm.png" />
+
+    <icon
+        launcher:appName="钥匙串 美密宝 key chain"
+        launcher:componentName="com.gome.keychain/com.gome.keychain.EntranceActivity"
+        launcher:iconPath="gome_icon_launcher_keychain.png" />
+
+    <icon
+        launcher:appName="用户中心"
+        launcher:componentName="com.gome.usercenter/com.gome.usercenter.activity.HomeActivity"
+        launcher:iconPath="gome_icon_launcher_usercenter.png" />
+
+    <icon
+        launcher:appName="全局收藏 觅夹 my pocket"
+        launcher:componentName="com.gome.mypocket/com.gome.mypocket.ui.home.PocketHomeCopyActivity"
+        launcher:iconPath="gome_icon_launcher_mypocket.png" />
+
+    <icon
+        launcher:appName="应用分身"
+        launcher:componentName="com.shiyue.APPVirtual/com.shiyue.Avatar.activity.SplashActivity"
+        launcher:iconPath="gome_icon_launcher_appcopy.png" />
+
+    <!--<icon-->
+        <!--launcher:appName="微信文件"-->
+        <!--launcher:componentName=""-->
+        <!--launcher:iconPath="gome_icon_launcher_wechat_files.png" />-->
+
+</icons>

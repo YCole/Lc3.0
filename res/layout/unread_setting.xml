@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Add by gaoquan 2017.6.1 -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:gome="http://schemas.android.com/apk/res/com.gome"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/setting_background_color">
+
+    <include layout="@layout/action_bar_back_unread"
+        android:id="@+id/content_top_settings" />
+
+    <!--<View-->
+        <!--style="@style/TopDividerStyle"-->
+        <!--/>-->
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:paddingTop="16dp"
+        android:paddingBottom="16dp"
+        >
+
+        <TextView
+            style="@style/Title_TextView_Style"
+            android:text="@string/unread_all" />
+
+            <gome.widget.GomeSwitch
+                android:id="@+id/all_switch"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:paddingStart="14dp"
+                android:paddingEnd="14dp"
+                android:layout_alignParentRight="true"
+                 />
+
+        </RelativeLayout>
+
+    <View
+        style="@style/ViewDividerStyle"
+        android:layout_marginStart="20dp"/>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/unread_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+
+</LinearLayout>

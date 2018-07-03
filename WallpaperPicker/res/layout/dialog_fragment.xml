@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/parent"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/transparent"
+    android:orientation="vertical"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp"
+    android:paddingBottom="10dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/dialog_shape"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/label_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/label_lock_screen"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:gravity="center_vertical"
+                android:text="@string/set_the_lock_screen"
+                android:textColor="#E6000000"
+                android:textSize="13sp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:background="#FFBFC3C7"
+                android:layout_height="1px"/>
+
+            <TextView
+                android:id="@+id/label_home_screen"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:gravity="center_vertical"
+                android:text="@string/set_the_home_screen"
+                android:textColor="#E6000000"
+                android:textSize="13sp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:background="#FFBFC3C7"
+                android:layout_height="1px"/>
+
+
+            <TextView
+                android:id="@+id/label_both_screen"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:gravity="center_vertical"
+                android:text="@string/set_at_the_same_time"
+                android:textColor="#E6000000"
+                android:textSize="13sp" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+</FrameLayout>
